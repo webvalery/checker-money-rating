@@ -1,0 +1,141 @@
+.index-pg {
+  background-color: #E5E5E5;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+.index-pg__start {  
+  width: 1200px;
+  margin: 100px auto;
+}
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.start__text {
+  margin: 0 0 20px 0;
+}
+.start__title {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+.start__text-add {
+  margin: 0 0 20px 0;
+}
+.start__sum {
+  margin: 0 0 20px 0;
+}
+.start__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.start__form-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+.start__box {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.start__box:last-of-type {
+  margin-right: 0;
+}
+.start__currency {
+  min-width: 180px;
+  border-radius: 25px;
+  padding: 5px 5px 5px 10px;
+}
+.start__span-dollar,
+.start__span-euro,
+.start__span-gbp,
+.start__span-jpy,
+.start__span-rub {
+  margin-bottom: 10px;
+}
+.start__form-btn-hide {
+  background-image: url(../img/hide.svg);
+  background-repeat: no-repeat;
+  background-size: 38.5px 34.8px;
+  background-position: center;
+  margin: 15px 0 0 15px;
+  width: 50px;
+  height: 50px;
+}
+.start__form-btn-hide:hover {
+  background-image: url(../img/hover-hide.svg);
+  background-size: 40px 36px;
+  cursor: pointer;
+}
+
+.start__form-btn {
+  font-size: 18px;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 2px 2px rgba(0,0,0,0.34);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+.start__form-btn:hover {
+  background-color: black;
+  color: #fff;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0; 
+  box-shadow: 2px 2px rgba(255,0,0);
+}
+.start__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.top__result {
+  font-size: 96px;
+  background: linear-gradient(90deg, rgba(158,217,175,1) 0%, rgba(182,192,223,1) 63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.start__donate {
+  margin-bottom: 0;
+  position: relative;
+}
+.start__donate:after {
+  content: "";
+  position: absolute;
+  width: 126px;
+  height: 38px;
+  background-image: url(../img/smile.png);
+  top: -126px;
+  left: 45px;
+}
+.index-pg__footer {
+  width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index-pg__footer-email {
+  text-decoration: none;
+  color: #B0B0B0;
+  font-size: 14px;
+}
+.index-pg__footer-text {
+  color: #B0B0B0;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+//  @import 'block/title.scss';
+//  @import 'block/blocas.scss';
+//  @import 'block/menu.scss';
