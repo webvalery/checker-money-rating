@@ -22,9 +22,11 @@ function checkData(event) {
 
 function renderResoult(sumInput) {
   let topRes;
+  let step;
   for(let i = 0; i < ranges.length; i++) {
     if(sumInput >= ranges[i].upper) {
-      topRes = ranges[i-1].topStart + Math.floor((ranges[i-1].upper - sumInput) / ranges[i-1].step);
+      step = (ranges[i-1].upper - ranges[i-1].lower) / ranges[i-1].amount; // вычисляем шаг в диапазоне
+      topRes = Math.floor(ranges[i-1].topStart + (ranges[i-1].upper - sumInput) / step);
       document.querySelector('.top__result').textContent = `${topRes}`;
       break;
     }

@@ -172,11 +172,11 @@ let ranges = [
   },
   {
     "range": "Austria",
-    "topStart": 424264242,
-    "topEnd": 441900786,
-    "upper": 4824,
-    "lower": 4616,
-    "amount": 17636545,
+    "topStart": 441900787,
+    "topEnd": 450816168,
+    "upper": 4615,
+    "lower": 4476,
+    "amount": 8915382,
     "step": 0.0000117937,
   },
   {
