@@ -609,7 +609,7 @@ let ranges = [
     "topEnd": 8000000000,
     "upper": 3,
     "lower": 0,
-    "amount": 1086290242,
+    "amount": 1121956942,
     "step": 0.0000000027
   },
 ]

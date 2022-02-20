@@ -29,6 +29,11 @@ function renderResoult(sumInput) {
       topRes = Math.floor(ranges[i-1].topStart + (ranges[i-1].upper - sumInput) / step);
       document.querySelector('.top__result').textContent = `${topRes}`;
       break;
+    } else if (sumInput < ranges[ranges.length - 1].upper) {
+      step = (ranges[ranges.length-1].upper - ranges[ranges.length-1].lower) / ranges[ranges.length-1].amount;
+      topRes = Math.floor(ranges[ranges.length-1].topStart + (ranges[ranges.length-1].upper - sumInput) / step);
+      document.querySelector('.top__result').textContent = `${topRes}`;
+      break;
     }
   }
 }
