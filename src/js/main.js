@@ -11,11 +11,11 @@ btnStart.addEventListener('click', checkData);
 function checkData(event) {
   event.preventDefault();
   let inputDollar =+ document.querySelector('.start__currency--dollar').value;
-  let inputEuro =+ Math.ceil(document.querySelector('.start__currency--euro').value * exchangeEuro);
-  let inputGbp =+ Math.ceil(document.querySelector('.start__currency--gbp').value * exchangeGbp);
-  let inputJpy =+ Math.ceil(document.querySelector('.start__currency--jpy').value * exchangeJpy);
-  let inputRub =+ Math.ceil(document.querySelector('.start__currency--rub').value * exchangeRub);
-  
+  let inputEuro =+ document.querySelector('.start__currency--euro').value * exchangeEuro;
+  let inputGbp =+ document.querySelector('.start__currency--gbp').value * exchangeGbp;
+  let inputJpy =+ document.querySelector('.start__currency--jpy').value * exchangeJpy;
+  let inputRub =+ document.querySelector('.start__currency--rub').value * exchangeRub;
+
   let sumInput = inputDollar + inputEuro + inputGbp + inputJpy + inputRub;
   renderResoult(sumInput);
 }
