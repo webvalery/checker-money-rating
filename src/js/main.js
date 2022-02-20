@@ -5,10 +5,10 @@ let exchangeRub = 0.013;
 
 // Событие клик на кнопку Start
 let btnStart = document.querySelector('.start__form-btn');
-btnStart.addEventListener('click', check);
+btnStart.addEventListener('click', checkData);
 
 
-function check(event) {
+function checkData(event) {
   event.preventDefault();
   let inputDollar =+ document.querySelector('.start__currency--dollar').value;
   let inputEuro =+ Math.ceil(document.querySelector('.start__currency--euro').value * exchangeEuro);
@@ -16,15 +16,18 @@ function check(event) {
   let inputJpy =+ Math.ceil(document.querySelector('.start__currency--jpy').value * exchangeJpy);
   let inputRub =+ Math.ceil(document.querySelector('.start__currency--rub').value * exchangeRub);
   
-  let checkSum = document.querySelector('.sum__button').checked; 
-  if(checkSum === true) {
-    let sumInput = inputDollar + inputEuro + inputGbp + inputJpy + inputRub;
-    document.querySelector('.top__result').textContent = `Привет, Димон. В твоём кошельке все вместе: ${sumInput}$`
-  } else {
-    console.log('Выключено');
+  let sumInput = inputDollar + inputEuro + inputGbp + inputJpy + inputRub;
+  renderResoult(sumInput);
+}
+
+function renderResoult(sumInput) {
+  let topRes;
+  for(let i = 0; i < ranges.length; i++) {
+    if(sumInput >= ranges[i].upper) {
+      topRes = ranges[i-1].topStart + Math.floor((ranges[i-1].upper - sumInput) / ranges[i-1].step);
+      document.querySelector('.top__result').textContent = `${topRes}`;
+      break;
+    }
   }
 }
 
-// fetch('http://api.coinlayer.com/live?access_key=4ed147814b987e83ed288fd73aa3e14f')
-//   .then(response => response.json())
-//   .then(resp => console.log(resp));
