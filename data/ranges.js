@@ -75,15 +75,15 @@ let ranges = [
     "range": "Luxembourg",
     "topStart": 20800001, //20 800 001
     "topEnd": 20862100, // 20 862 100
-    "upper": 999999, 
-    "lower": 9000, 
-    "amount": 62100, 
+    "upper": 999999,
+    "lower": 9000,
+    "amount": 62100,
     "step": 15.9581159420,
   },
   {
     "range": "Ireland",
-    "topStart": 20862101, 
-    "topEnd": 25783600, 
+    "topStart": 20862101,
+    "topEnd": 25783600,
     "upper": 8999,
     "lower": 8000,
     "amount": 4921500,
