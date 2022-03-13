@@ -1,7 +1,7 @@
 let exchangeEuro = 1.13;
 let exchangeGbp = 1.36;
 let exchangeJpy = 0.0087;
-let exchangeRub = 0.013;
+let exchangeRub = 0.0075;
 
 // Скрытие суммы 
 let checkboxScreen = document.querySelector('.sum__button');
