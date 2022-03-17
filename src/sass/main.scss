@@ -61,11 +61,59 @@
   left: 20px;
 }
 // конец кнопки
+// начало анимации планеты
+.planet {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.planet__circle {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: url('../img/move-map.svg') repeat-x;
+  background-size: auto 100%;
+  animation: move-map 15s infinite linear;
+}
+.planet__circle:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: -40px 10px 70px 10px rgba(0,0,0,0.5) inset;
+}
 
+@keyframes move-map {
+  0% {
+    background-position: -400px 0; 
+  }
+
+  100% {
+    background-position: 0 0; 
+  } 
+}
+// конец анимации планеты
+.planet__text {
+  position: absolute;
+  top: 46%;
+  left: -13%;
+  font-size: 33px;
+  white-space: nowrap;
+}
+.planet--disabled{
+  display: none;
+}
 .start__form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.start__form--disabled {
+  display: none;
 }
 .start__form-input {
   display: flex;
@@ -235,11 +283,3 @@
     font-size: 50px;
   }
 }
-
-
-
-
-
-//  @import 'block/title.scss';
-//  @import 'block/blocas.scss';
-//  @import 'block/menu.scss';

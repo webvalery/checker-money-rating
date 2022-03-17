@@ -8,15 +8,13 @@ let checkboxScreen = document.querySelector('.sum__button');
 let hideScreen = document.querySelector('.start__form-btn-hide');
 checkboxScreen.addEventListener('change', () => {
   if (checkboxScreen.checked) {
-    hideScreen.classList.add('start__form-btn-hide--active');
-    document.querySelectorAll('.start__currency').forEach(element => {
-      element.setAttribute('type', 'password');
-    });    
+    hideScreen.classList.add('start__form-btn-hide--active');  
+    document.querySelector('.planet').classList.remove('planet--disabled');
+    document.querySelector('.start__form').classList.add('start__form--disabled');
   } else {
-    hideScreen.classList.remove('start__form-btn-hide--active');
-    document.querySelectorAll('.start__currency').forEach(element => {
-      element.setAttribute('type', 'text');
-    });    
+    hideScreen.classList.remove('start__form-btn-hide--active');  
+    document.querySelector('.planet').classList.add('planet--disabled');
+    document.querySelector('.start__form').classList.remove('start__form--disabled');
   }
 })
 
