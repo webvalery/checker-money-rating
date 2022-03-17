@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>Forbs world</title>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body class="index-pg">
   <section class="start index-pg__start">
     <p class="start__text">Hello, this:</p>
@@ -19,7 +21,13 @@
       Hide the entered data for the screenshot
       <input class="sum__button" id="funcSum" type="checkbox">
     </label>
-
+    <div class="planet planet--disabled">
+      <figure class="planet__circle">
+        <figcaption class="planet__text">
+          Checker-Money-Rating.com
+        </figcaption>
+      </figure>
+    </div>
     <form class="start__form" action="">
       <div class="start__form-input">
         <div class="start__box">
@@ -57,15 +65,17 @@
     <button class="start__form-btn start__share-result">Share result</button>
     <button class="start__form-btn start__donate">Buy beer for developer</button>
   </section>
-
   <footer class="index-pg__footer">
-    <a class="index-pg__footer-email" href="mailto:contact@checker-money-rating.com">contact@checker-money-rating.com</a>
+    <a class="index-pg__footer-email"
+      href="mailto:contact@checker-money-rating.com">contact@checker-money-rating.com</a>
     <p class="index-pg__footer-text">
-    *We do not know the exact amount of money of every person on earth, so these data are approximate and may differ from
-    reality, but, nevertheless, we conducted a thorough analysis based on many data
+      *We do not know the exact amount of money of every person on earth, so these data are approximate and may differ
+      from
+      reality, but, nevertheless, we conducted a thorough analysis based on many data
     </p>
   </footer>
   <script src="./data/ranges.js"></script>
   <script src="./js/main.min.js"></script>
 </body>
+
 </html>
